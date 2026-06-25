@@ -12,15 +12,15 @@ class RegistroCreateView(CreateView):
     model = Registro
     fields = ['total', 'fecha', 'tipo', 'categoria']
     template_name = 'registro/create.html'
-    success_url = reverse_lazy('registro_list')
+    success_url = reverse_lazy('registro:registro_list')
 
 class RegistroUpdateView(UpdateView):
     model = Registro
     template_name = 'registro/update.html'
     fields = ['total', 'fecha', 'tipo', 'categoria']
-    success_url = reverse_lazy('registro_list')
+    success_url = reverse_lazy('registro:registro_list')
 
 class RegistroDeleteView(DeleteView):
     model = Registro
     template_name = 'registro/delete.html'
-    success_url = reverse_lazy('registro_list')
+    success_url = reverse_lazy('registro:registro_list')

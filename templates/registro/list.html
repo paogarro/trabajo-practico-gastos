@@ -11,7 +11,7 @@
             <h2>Historial de Movimientos</h2>
             <div>
                 <a href="{% url 'categoria:categoria_list' %}" class="btn btn-outline-secondary me-2">Gestionar Categorías</a>
-                <a href="{% url 'registro_create' %}" class="btn btn-success">+ Registrar Movimiento</a>
+                <a href="{% url 'registro:registro_create' %}" class="btn btn-success">+ Registrar Movimiento</a>
             </div>
         </div>
 
@@ -45,8 +45,8 @@
                                 </strong>
                             </td>
                             <td class="text-end">
-                                <a href="{% url 'registro_update' registro.id %}" class="btn btn-sm btn-warning">Editar</a>
-                                <a href="{% url 'registro_delete' registro.id %}" class="btn btn-sm btn-danger">Eliminar</a>
+                                <a href="{% url 'registro:registro_update' registro.id %}" class="btn btn-sm btn-warning">Editar</a>
+                                <a href="{% url 'registro:registro_delete' registro.id %}" class="btn btn-sm btn-danger">Eliminar</a>
                             </td>
                         </tr>
                         {% empty %}

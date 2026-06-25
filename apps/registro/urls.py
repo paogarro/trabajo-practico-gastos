@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import RegistroListView, RegistroCreateView, RegistroUpdateView, RegistroDeleteView
 
+app_name = 'registro'
 urlpatterns = [
     path('', RegistroListView.as_view(), name='registro_list'),
     path('nuevo/', RegistroCreateView.as_view(), name='registro_create'),
